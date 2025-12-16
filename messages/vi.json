@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "title": "Maison Sound Healing | Âm Thanh Trị Liệu & Thiền Định",
+    "description": "Trung tâm chữa lành toàn diện kết hợp trí tuệ cổ đại với y học hiện đại. Trải nghiệm âm thanh trị liệu, thiền định, yoga và các phương pháp chữa lành tâm hồn."
+  },
+  "nav": {
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "services": "Dịch Vụ",
+    "team": "Đội Ngũ",
+    "contact": "Liên Hệ",
+    "booking": "Đặt Lịch"
+  },
+  "hero": {
+    "welcome": "Chào mừng đến với",
+    "title": "Maison Sound Healing",
+    "subtitle": "Kết Hợp Trí Tuệ Cổ Đại Với Y Học Hiện Đại",
+    "description": "Trải nghiệm âm thanh trị liệu, thiền định, yoga và các phương pháp chữa lành toàn diện cho tâm hồn và cơ thể",
+    "exploreServices": "Khám Phá Dịch Vụ",
+    "bookNow": "Đặt Lịch Ngay"
+  },
+  "about": {
+    "subtitle": "Về Chúng Tôi",
+    "title": "Kết Hợp Trí Tuệ Cổ Đại Với Y Học Hiện Đại",
+    "quote": "Tâm hồn luôn biết cách để chữa lành chính nó. Thách thức là làm sao để tĩnh lặng tâm trí.",
+    "quoteAuthor": "— Caroline Myss",
+    "paragraph1": "Maison Sound Healing được thành lập với sứ mệnh mang đến những trải nghiệm chữa lành toàn diện, kết hợp giữa y học phương Đông truyền thống và khoa học hiện đại.",
+    "paragraph2": "Chúng tôi nhận ra rằng trong khi y học phương Tây và tâm lý trị liệu đóng vai trò quan trọng trong việc kiểm soát bệnh tật, những nguyên nhân gốc rễ của triệu chứng thường không được giải quyết triệt để.",
+    "learnMore": "Tìm Hiểu Thêm"
+  },
+  "services": {
+    "subtitle": "Dịch Vụ Của Chúng Tôi",
+    "title": "Hành Trình Chữa Lành",
+    "viewAll": "Xem Tất Cả Dịch Vụ",
+    "detail": "Chi Tiết",
+    "book": "Đặt Lịch",
+    "items": {
+      "soundHealing": {
+        "title": "Âm Thanh Trị Liệu",
+        "description": "Sử dụng chuông xoay Tây Tạng, gong và các nhạc cụ thiêng liêng để tạo ra tần số chữa lành, giúp cân bằng năng lượng cơ thể.",
+        "duration": "60 phút",
+        "price": "999,000đ"
+      },
+      "meditation": {
+        "title": "Thiền Định",
+        "description": "Các buổi thiền định hướng dẫn giúp bạn kết nối với nội tâm, giải phóng căng thẳng và tìm lại sự bình yên.",
+        "duration": "60 phút",
+        "price": "999,000đ"
+      },
+      "yoga": {
+        "title": "Yoga Yin",
+        "description": "Thực hành giữ các tư thế trong thời gian dài để mở các đường kinh mạch, cải thiện sự cân bằng cảm xúc.",
+        "duration": "75 phút",
+        "price": "1,499,000đ"
+      },
+      "breathwork": {
+        "title": "Breathwork",
+        "description": "Kỹ thuật thở Pranayama và Holotropic giúp kiểm soát tâm trí, nâng cao năng lượng nội tại.",
+        "duration": "120 phút",
+        "price": "1,999,000đ"
+      },
+      "chanting": {
+        "title": "Chanting Circle",
+        "description": "Thực hành tụng \"Om\" trong nhóm, kích thích dây thần kinh phế vị, mang lại sự thư giãn và bình an nội tại.",
+        "duration": "60 phút",
+        "price": "999,000đ"
+      },
+      "retreat": {
+        "title": "Retreat & Workshop",
+        "description": "Các khóa retreat từ 2-3 ngày tại thiên nhiên, kết hợp nhiều phương pháp chữa lành.",
+        "duration": "2-3 ngày",
+        "price": "Liên hệ"
+      }
+    }
+  },
+  "contact": {
+    "subtitle": "Liên Hệ",
+    "title": "Hãy Bắt Đầu Hành Trình Cùng Chúng Tôi",
+    "description": "Chúng tôi luôn sẵn sàng lắng nghe và tư vấn cho bạn. Hãy liên hệ với chúng tôi để bắt đầu hành trình chữa lành của riêng bạn.",
+    "address": "Địa Chỉ",
+    "addressValue": "123 Đường Nguyễn Huệ, Quận 1, TP.HCM",
+    "phone": "Điện Thoại",
+    "email": "Email",
+    "hours": "Giờ Làm Việc",
+    "weekdays": "Thứ 2 - Thứ 7: 9:00 - 20:00",
+    "weekend": "Chủ Nhật: 9:00 - 17:00",
+    "form": {
+      "title": "Gửi Tin Nhắn",
+      "name": "Họ và Tên",
+      "namePlaceholder": "Nhập họ và tên",
+      "phonePlaceholder": "Nhập số điện thoại",
+      "emailPlaceholder": "Nhập địa chỉ email",
+      "service": "Dịch Vụ Quan Tâm",
+      "selectService": "Chọn dịch vụ",
+      "message": "Tin Nhắn",
+      "messagePlaceholder": "Nhập tin nhắn của bạn...",
+      "submit": "Gửi Tin Nhắn"
+    }
+  },
+  "footer": {
+    "description": "Kết hợp trí tuệ cổ đại với khoa học hiện đại, chúng tôi mang đến những trải nghiệm chữa lành toàn diện cho tâm hồn và cơ thể.",
+    "quickLinks": "Liên Kết Nhanh",
+    "contactTitle": "Liên Hệ",
+    "copyright": "© {year} Maison Sound Healing. All rights reserved.",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản sử dụng"
+  },
+  "language": {
+    "vi": "Tiếng Việt",
+    "en": "English"
+  },
+  "team": {
+    "subtitle": "Đội Ngũ",
+    "title": "Những Người Đồng Hành",
+    "description": "Đội ngũ chuyên gia tận tâm của chúng tôi sẵn sàng đồng hành cùng bạn trong hành trình chữa lành và khám phá bản thân.",
+    "viewDetail": "Xem Chi Tiết Đội Ngũ",
+    "members": {
+      "member1": {
+        "name": "Nguyễn Minh Tâm",
+        "role": "Giám đốc Y khoa, Người sáng lập",
+        "bio": "Bác sĩ với hơn 15 năm kinh nghiệm, được đào tạo về y học cổ truyền tại Ấn Độ và Tây Tạng."
+      },
+      "member2": {
+        "name": "Trần Thanh Hà",
+        "role": "Chuyên gia Yoga & Thiền định",
+        "bio": "Giáo viên Yoga RYT-500, chuyên về Yin Yoga và thiền định mindfulness."
+      },
+      "member3": {
+        "name": "Lê Hoàng Nam",
+        "role": "Chuyên gia Âm thanh Trị liệu",
+        "bio": "Nghệ sĩ âm thanh trị liệu được chứng nhận, 10 năm nghiên cứu về tần số chữa lành."
+      }
+    }
+  },
+  "testimonials": {
+    "subtitle": "Cảm Nhận",
+    "title": "Khách Hàng Nói Gì",
+    "items": {
+      "item1": {
+        "content": "Sau khi tham gia các buổi âm thanh trị liệu tại Maison, tôi cảm thấy tâm trí được giải phóng hoàn toàn. Những căng thẳng tích tụ bấy lâu dường như tan biến.",
+        "author": "Phạm Thu Hương",
+        "role": "Giám đốc Marketing"
+      },
+      "item2": {
+        "content": "Đội ngũ tại đây rất chuyên nghiệp và tận tâm. Mỗi buổi thiền định đều mang lại cho tôi những trải nghiệm mới mẻ và sâu sắc.",
+        "author": "Nguyễn Văn Hải",
+        "role": "Doanh nhân"
+      },
+      "item3": {
+        "content": "Khóa retreat 3 ngày tại Maison đã thay đổi hoàn toàn cách tôi nhìn nhận cuộc sống. Một trải nghiệm đáng giá mà ai cũng nên thử.",
+        "author": "Lê Minh Châu",
+        "role": "Bác sĩ"
+      }
+    }
+  }
+}

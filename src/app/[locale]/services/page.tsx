@@ -1,17 +1,27 @@
+import { setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Dịch Vụ | Maison Sound Healing',
-  description: 'Khám phá các dịch vụ chữa lành của chúng tôi: Âm thanh trị liệu, Thiền định, Yoga Yin, Breathwork và nhiều hơn nữa.',
+type Props = {
+  params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  return {
+    title: locale === 'vi' ? 'Dịch Vụ | Maison Sound Healing' : 'Services | Maison Sound Healing',
+    description: locale === 'vi'
+      ? 'Khám phá các dịch vụ chữa lành của chúng tôi: Âm thanh trị liệu, Thiền định, Yoga Yin, Breathwork và nhiều hơn nữa.'
+      : 'Discover our healing services: Sound Healing, Meditation, Yin Yoga, Breathwork and more.',
+  };
+}
 
 const services = [
   {
     id: 'sound-healing',
     title: 'Âm Thanh Trị Liệu',
     subtitle: 'Sound Healing',
-    description: 'Sử dụng chuông xoay Tây Tạng, gong, và các nhạc cụ thiêng liêng để tạo ra tần số chữa lành. Âm thanh tác động trực tiếp đến hệ thần kinh, giúp cân bằng năng lượng cơ thể và mang lại sự thư giãn sâu.',
+    description: 'Sử dụng chuông xoay Tây Tạng, gông, trống biển, cây gậy mưa, Chuông pha lê sóng dọc và các nhạc cụ thiêng liêng để tạo ra tần số chữa lành. Âm thanh tác động trực tiếp đến hệ thần kinh, giúp cân bằng năng lượng cơ thể và mang lại sự thư giãn sâu.',
     benefits: [
       'Giảm căng thẳng và lo âu',
       'Cải thiện giấc ngủ',
@@ -20,7 +30,7 @@ const services = [
       'Giải phóng cảm xúc tiêu cực',
     ],
     duration: '60 phút',
-    price: '1,500,000đ',
+    price: '999,000đ',
     image: '/images/service-sound.jpg',
   },
   {
@@ -36,7 +46,7 @@ const services = [
       'Phát triển mindfulness',
     ],
     duration: '60 phút',
-    price: '800,000đ',
+    price: '999,000đ',
     image: '/images/service-meditation.jpg',
   },
   {
@@ -51,8 +61,8 @@ const services = [
       'Cân bằng cảm xúc',
       'Kết nối thân-tâm',
     ],
-    duration: '75 phút',
-    price: '600,000đ',
+    duration: '60 phút',
+    price: '400,000 đ',
     image: '/images/service-yoga.jpg',
   },
   {
@@ -68,24 +78,8 @@ const services = [
       'Cải thiện hệ hô hấp',
     ],
     duration: '120 phút',
-    price: '1,200,000đ',
+    price: '1,999,000đ',
     image: '/images/service-breathwork.jpg',
-  },
-  {
-    id: 'chanting',
-    title: 'Chanting Circle',
-    subtitle: 'Vòng Tròn Tụng Niệm',
-    description: 'Thực hành tụng "Om" và các mantra thiêng liêng trong nhóm, kích thích dây thần kinh phế vị, mang lại sự thư giãn và bình an nội tại.',
-    benefits: [
-      'Kích thích dây thần kinh phế vị',
-      'Giảm stress tức thì',
-      'Kết nối cộng đồng',
-      'Nâng cao rung động',
-      'Tĩnh tâm sâu',
-    ],
-    duration: '60 phút',
-    price: '500,000đ',
-    image: '/images/service-chanting.jpg',
   },
   {
     id: 'retreat',
@@ -105,7 +99,10 @@ const services = [
   },
 ];
 
-export default function ServicesPage() {
+export default async function ServicesPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       {/* Hero Section */}

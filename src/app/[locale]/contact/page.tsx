@@ -1,11 +1,24 @@
+import { setRequestLocale } from 'next-intl/server';
 import Contact from '@/components/Contact';
 
-export const metadata = {
-  title: 'Liên Hệ | Maison Sound Healing',
-  description: 'Liên hệ với Maison Sound Healing để đặt lịch tư vấn hoặc đặt câu hỏi về các dịch vụ của chúng tôi.',
+type Props = {
+  params: Promise<{ locale: string }>;
 };
 
-export default function ContactPage() {
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  return {
+    title: locale === 'vi' ? 'Liên Hệ | Maison Sound Healing' : 'Contact | Maison Sound Healing',
+    description: locale === 'vi'
+      ? 'Liên hệ với Maison Sound Healing để đặt lịch tư vấn hoặc đặt câu hỏi về các dịch vụ của chúng tôi.'
+      : 'Contact Maison Sound Healing to schedule a consultation or ask questions about our services.',
+  };
+}
+
+export default async function ContactPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       {/* Hero Section */}

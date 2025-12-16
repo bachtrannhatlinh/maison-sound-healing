@@ -1,10 +1,20 @@
+import { setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Đội Ngũ | Maison Sound Healing',
-  description: 'Gặp gỡ đội ngũ chuyên gia tận tâm của Maison Sound Healing.',
+type Props = {
+  params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  return {
+    title: locale === 'vi' ? 'Đội Ngũ | Maison Sound Healing' : 'Our Team | Maison Sound Healing',
+    description: locale === 'vi'
+      ? 'Gặp gỡ đội ngũ chuyên gia tận tâm của Maison Sound Healing.'
+      : 'Meet the dedicated team of experts at Maison Sound Healing.',
+  };
+}
 
 const team = [
   {
@@ -57,7 +67,10 @@ const team = [
   },
 ];
 
-export default function TeamPage() {
+export default async function TeamPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       {/* Hero Section */}

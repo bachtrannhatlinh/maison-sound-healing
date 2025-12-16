@@ -1,37 +1,23 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-
-const testimonials = [
-  {
-    id: 1,
-    content: 'Sau khi tham gia các buổi âm thanh trị liệu tại Maison, tôi cảm thấy tâm trí được giải phóng hoàn toàn. Những căng thẳng tích tụ bấy lâu dường như tan biến.',
-    author: 'Phạm Thu Hương',
-    role: 'Giám đốc Marketing',
-    image: '/images/testimonial-1.jpg',
-  },
-  {
-    id: 2,
-    content: 'Đội ngũ tại đây rất chuyên nghiệp và tận tâm. Mỗi buổi thiền định đều mang lại cho tôi những trải nghiệm mới mẻ và sâu sắc.',
-    author: 'Nguyễn Văn Hải',
-    role: 'Doanh nhân',
-    image: '/images/testimonial-2.jpg',
-  },
-  {
-    id: 3,
-    content: 'Khóa retreat 3 ngày tại Maison đã thay đổi hoàn toàn cách tôi nhìn nhận cuộc sống. Một trải nghiệm đáng giá mà ai cũng nên thử.',
-    author: 'Lê Minh Châu',
-    role: 'Bác sĩ',
-    image: '/images/testimonial-3.jpg',
-  },
-];
 
 const Testimonials = () => {
   const [current, setCurrent] = useState(0);
+  const t = useTranslations('testimonials');
+
+  const testimonials = [
+    { id: 1, key: 'item1', image: '/images/testimonial-1.jpg' },
+    { id: 2, key: 'item2', image: '/images/testimonial-2.jpg' },
+    { id: 3, key: 'item3', image: '/images/testimonial-3.jpg' },
+  ];
 
   const next = () => setCurrent((current + 1) % testimonials.length);
   const prev = () => setCurrent((current - 1 + testimonials.length) % testimonials.length);
+
+  const currentItem = testimonials[current];
 
   return (
     <section className="py-24 bg-[#2c3e50] text-white">
@@ -39,10 +25,10 @@ const Testimonials = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] text-[#d4af37] uppercase mb-4">
-            Cảm Nhận
+            {t('subtitle')}
           </p>
           <h2 className="text-4xl md:text-5xl font-light mb-6">
-            Khách Hàng Nói Gì
+            {t('title')}
           </h2>
           <div className="w-24 h-[1px] bg-white/40 mx-auto"></div>
         </div>
@@ -57,22 +43,22 @@ const Testimonials = () => {
 
             {/* Content */}
             <p className="text-2xl md:text-3xl font-light italic leading-relaxed mb-10 max-w-3xl mx-auto">
-              &ldquo;{testimonials[current].content}&rdquo;
+              &ldquo;{t(`items.${currentItem.key}.content`)}&rdquo;
             </p>
 
             {/* Author */}
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 rounded-full overflow-hidden mb-4 ring-2 ring-[#d4af37]">
                 <Image
-                  src={testimonials[current].image}
-                  alt={testimonials[current].author}
+                  src={currentItem.image}
+                  alt={t(`items.${currentItem.key}.author`)}
                   width={64}
                   height={64}
                   className="object-cover w-full h-full"
                 />
               </div>
-              <h4 className="text-lg font-medium">{testimonials[current].author}</h4>
-              <p className="text-sm text-gray-400">{testimonials[current].role}</p>
+              <h4 className="text-lg font-medium">{t(`items.${currentItem.key}.author`)}</h4>
+              <p className="text-sm text-gray-400">{t(`items.${currentItem.key}.role`)}</p>
             </div>
           </div>
 

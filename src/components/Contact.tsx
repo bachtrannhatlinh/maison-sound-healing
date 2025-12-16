@@ -1,6 +1,10 @@
-import Link from 'next/link';
+'use client';
+
+import { useTranslations } from 'next-intl';
 
 const Contact = () => {
+  const t = useTranslations('contact');
+
   return (
     <section className="py-24 bg-[#faf8f5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,15 +12,14 @@ const Contact = () => {
           {/* Info */}
           <div>
             <p className="text-sm tracking-[0.3em] text-[#8b7355] uppercase mb-4">
-              Liên Hệ
+              {t('subtitle')}
             </p>
             <h2 className="text-4xl md:text-5xl font-light text-[#2c3e50] mb-8">
-              Hãy Bắt Đầu<br />
-              Hành Trình Cùng Chúng Tôi
+              {t('title').split(' ').slice(0, 3).join(' ')}<br />
+              {t('title').split(' ').slice(3).join(' ')}
             </h2>
             <p className="text-gray-600 leading-relaxed mb-10">
-              Chúng tôi luôn sẵn sàng lắng nghe và tư vấn cho bạn. Hãy liên hệ 
-              với chúng tôi để bắt đầu hành trình chữa lành của riêng bạn.
+              {t('description')}
             </p>
 
             {/* Contact Info */}
@@ -29,8 +32,8 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-[#2c3e50] mb-1">Địa Chỉ</h4>
-                  <p className="text-gray-600">123 Đường Nguyễn Huệ, Quận 1, TP.HCM</p>
+                  <h4 className="font-medium text-[#2c3e50] mb-1">{t('address')}</h4>
+                  <p className="text-gray-600">{t('addressValue')}</p>
                 </div>
               </div>
 
@@ -41,7 +44,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-[#2c3e50] mb-1">Điện Thoại</h4>
+                  <h4 className="font-medium text-[#2c3e50] mb-1">{t('phone')}</h4>
                   <p className="text-gray-600">+84 123 456 789</p>
                 </div>
               </div>
@@ -53,7 +56,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-[#2c3e50] mb-1">Email</h4>
+                  <h4 className="font-medium text-[#2c3e50] mb-1">{t('email')}</h4>
                   <p className="text-gray-600">info@maisonsoundhealing.com</p>
                 </div>
               </div>
@@ -65,9 +68,9 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-[#2c3e50] mb-1">Giờ Làm Việc</h4>
-                  <p className="text-gray-600">Thứ 2 - Thứ 7: 9:00 - 20:00</p>
-                  <p className="text-gray-600">Chủ Nhật: 9:00 - 17:00</p>
+                  <h4 className="font-medium text-[#2c3e50] mb-1">{t('hours')}</h4>
+                  <p className="text-gray-600">{t('weekdays')}</p>
+                  <p className="text-gray-600">{t('weekend')}</p>
                 </div>
               </div>
             </div>
@@ -76,13 +79,13 @@ const Contact = () => {
           {/* Form */}
           <div className="bg-white p-8 md:p-12 shadow-lg">
             <h3 className="text-2xl font-light text-[#2c3e50] mb-8">
-              Gửi Tin Nhắn
+              {t('form.title')}
             </h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm text-gray-600 mb-2">
-                    Họ và Tên *
+                    {t('form.name')} *
                   </label>
                   <input
                     type="text"
@@ -90,12 +93,12 @@ const Contact = () => {
                     name="name"
                     required
                     className="w-full px-4 py-3 border border-gray-300 focus:border-[#8b7355] focus:outline-none transition-colors"
-                    placeholder="Nhập họ và tên"
+                    placeholder={t('form.namePlaceholder')}
                   />
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm text-gray-600 mb-2">
-                    Số Điện Thoại *
+                    {t('phone')} *
                   </label>
                   <input
                     type="tel"
@@ -103,14 +106,14 @@ const Contact = () => {
                     name="phone"
                     required
                     className="w-full px-4 py-3 border border-gray-300 focus:border-[#8b7355] focus:outline-none transition-colors"
-                    placeholder="Nhập số điện thoại"
+                    placeholder={t('form.phonePlaceholder')}
                   />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm text-gray-600 mb-2">
-                  Email *
+                  {t('email')} *
                 </label>
                 <input
                   type="email"
@@ -118,23 +121,23 @@ const Contact = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 border border-gray-300 focus:border-[#8b7355] focus:outline-none transition-colors"
-                  placeholder="Nhập địa chỉ email"
+                  placeholder={t('form.emailPlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="service" className="block text-sm text-gray-600 mb-2">
-                  Dịch Vụ Quan Tâm
+                  {t('form.service')}
                 </label>
                 <select
                   id="service"
                   name="service"
                   className="w-full px-4 py-3 border border-gray-300 focus:border-[#8b7355] focus:outline-none transition-colors bg-white"
                 >
-                  <option value="">Chọn dịch vụ</option>
-                  <option value="sound-healing">Âm Thanh Trị Liệu</option>
-                  <option value="meditation">Thiền Định</option>
-                  <option value="yoga">Yoga Yin</option>
+                  <option value="">{t('form.selectService')}</option>
+                  <option value="sound-healing">Sound Healing</option>
+                  <option value="meditation">Meditation</option>
+                  <option value="yoga">Yin Yoga</option>
                   <option value="breathwork">Breathwork</option>
                   <option value="chanting">Chanting Circle</option>
                   <option value="retreat">Retreat & Workshop</option>
@@ -143,14 +146,14 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm text-gray-600 mb-2">
-                  Tin Nhắn
+                  {t('form.message')}
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-300 focus:border-[#8b7355] focus:outline-none transition-colors resize-none"
-                  placeholder="Nhập tin nhắn của bạn..."
+                  placeholder={t('form.messagePlaceholder')}
                 ></textarea>
               </div>
 
@@ -158,7 +161,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full btn-primary"
               >
-                Gửi Tin Nhắn
+                {t('form.submit')}
               </button>
             </form>
           </div>

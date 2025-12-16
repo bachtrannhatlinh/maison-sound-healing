@@ -1,12 +1,25 @@
+import { setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Giới Thiệu | Maison Sound Healing',
-  description: 'Tìm hiểu về Maison Sound Healing - Trung tâm chữa lành toàn diện kết hợp trí tuệ cổ đại với y học hiện đại.',
+type Props = {
+  params: Promise<{ locale: string }>;
 };
 
-export default function AboutPage() {
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  return {
+    title: locale === 'vi' ? 'Giới Thiệu | Maison Sound Healing' : 'About Us | Maison Sound Healing',
+    description: locale === 'vi' 
+      ? 'Tìm hiểu về Maison Sound Healing - Trung tâm chữa lành toàn diện kết hợp trí tuệ cổ đại với y học hiện đại.'
+      : 'Learn about Maison Sound Healing - A holistic healing center combining ancient wisdom with modern medicine.',
+  };
+}
+
+export default async function AboutPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       {/* Hero Section */}

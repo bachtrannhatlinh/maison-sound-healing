@@ -1,7 +1,12 @@
-import Link from 'next/link';
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 
 const About = () => {
+  const t = useTranslations('about');
+
   return (
     <section className="py-24 bg-[#faf8f5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,37 +28,32 @@ const About = () => {
           {/* Content */}
           <div>
             <p className="text-sm tracking-[0.3em] text-[#8b7355] uppercase mb-4">
-              Về Chúng Tôi
+              {t('subtitle')}
             </p>
             <h2 className="text-4xl md:text-5xl font-light text-[#2c3e50] mb-8 leading-tight">
-              Kết Hợp Trí Tuệ Cổ Đại<br />
-              Với Y Học Hiện Đại
+              {t('title').split(' ').slice(0, 4).join(' ')}<br />
+              {t('title').split(' ').slice(4).join(' ')}
             </h2>
             
             <blockquote className="border-l-2 border-[#8b7355] pl-6 my-8 italic text-xl text-gray-600">
-              &ldquo;Tâm hồn luôn biết cách để chữa lành chính nó. Thách thức là 
-              làm sao để tĩnh lặng tâm trí.&rdquo;
+              &ldquo;{t('quote')}&rdquo;
               <footer className="mt-2 text-sm not-italic text-[#8b7355]">
-                — Caroline Myss
+                {t('quoteAuthor')}
               </footer>
             </blockquote>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Maison Sound Healing được thành lập với sứ mệnh mang đến những trải 
-              nghiệm chữa lành toàn diện, kết hợp giữa y học phương Đông truyền thống 
-              và khoa học hiện đại.
+              {t('paragraph1')}
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Chúng tôi nhận ra rằng trong khi y học phương Tây và tâm lý trị liệu 
-              đóng vai trò quan trọng trong việc kiểm soát bệnh tật, những nguyên 
-              nhân gốc rễ của triệu chứng thường không được giải quyết triệt để.
+              {t('paragraph2')}
             </p>
 
             <Link
               href="/about"
               className="inline-flex items-center text-[#8b7355] tracking-widest text-sm uppercase hover:text-[#6d5a43] transition-colors group"
             >
-              Tìm Hiểu Thêm
+              {t('learnMore')}
               <svg 
                 className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" 
                 fill="none" 

@@ -1,6 +1,20 @@
-import Link from 'next/link';
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 const Footer = () => {
+  const t = useTranslations('footer');
+  const tNav = useTranslations('nav');
+
+  const navItems = [
+    { name: tNav('home'), href: '/' },
+    { name: tNav('about'), href: '/about' },
+    { name: tNav('services'), href: '/services' },
+    { name: tNav('team'), href: '/team' },
+    { name: tNav('contact'), href: '/contact' },
+  ];
+
   return (
     <footer className="bg-[#2c3e50] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -11,8 +25,7 @@ const Footer = () => {
               MAISON SOUND HEALING
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed mb-6 max-w-md">
-              Kết hợp trí tuệ cổ đại với khoa học hiện đại, chúng tôi mang đến 
-              những trải nghiệm chữa lành toàn diện cho tâm hồn và cơ thể.
+              {t('description')}
             </p>
             <div className="flex space-x-4">
               <a
@@ -51,16 +64,16 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="text-sm font-medium tracking-widest uppercase mb-6">
-              Liên Kết Nhanh
+              {t('quickLinks')}
             </h4>
             <ul className="space-y-3">
-              {['Trang Chủ', 'Giới Thiệu', 'Dịch Vụ', 'Đội Ngũ', 'Liên Hệ'].map((item) => (
-                <li key={item}>
+              {navItems.map((item) => (
+                <li key={item.href}>
                   <Link
-                    href={`/${item === 'Trang Chủ' ? '' : item.toLowerCase().replace(' ', '-')}`}
+                    href={item.href}
                     className="text-gray-300 hover:text-white text-sm transition-colors"
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -70,7 +83,7 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h4 className="text-sm font-medium tracking-widest uppercase mb-6">
-              Liên Hệ
+              {t('contactTitle')}
             </h4>
             <ul className="space-y-3 text-gray-300 text-sm">
               <li className="flex items-start space-x-3">
@@ -78,7 +91,7 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                 </svg>
-                <span>123 Đường Nguyễn Huệ, Quận 1, TP.HCM</span>
+                <span>123 Nguyen Hue, District 1, HCMC</span>
               </li>
               <li className="flex items-center space-x-3">
                 <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,13 +112,13 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-gray-600">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Maison Sound Healing. All rights reserved.</p>
+            <p>{t('copyright', { year: new Date().getFullYear() })}</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/privacy" className="hover:text-white transition-colors">
-                Chính sách bảo mật
+                {t('privacy')}
               </Link>
               <Link href="/terms" className="hover:text-white transition-colors">
-                Điều khoản sử dụng
+                {t('terms')}
               </Link>
             </div>
           </div>

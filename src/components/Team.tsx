@@ -1,46 +1,32 @@
-import Image from 'next/image';
-import Link from 'next/link';
+'use client';
 
-const team = [
-  {
-    id: 1,
-    name: 'Nguyễn Minh Tâm',
-    role: 'Giám đốc Y khoa, Người sáng lập',
-    bio: 'Bác sĩ với hơn 15 năm kinh nghiệm, được đào tạo về y học cổ truyền tại Ấn Độ và Tây Tạng.',
-    image: '/images/team-1.jpg',
-  },
-  {
-    id: 2,
-    name: 'Trần Thanh Hà',
-    role: 'Chuyên gia Yoga & Thiền định',
-    bio: 'Giáo viên Yoga RYT-500, chuyên về Yin Yoga và thiền định mindfulness.',
-    image: '/images/team-2.jpg',
-  },
-  {
-    id: 3,
-    name: 'Lê Hoàng Nam',
-    role: 'Chuyên gia Âm thanh Trị liệu',
-    bio: 'Nghệ sĩ âm thanh trị liệu được chứng nhận, 10 năm nghiên cứu về tần số chữa lành.',
-    image: '/images/team-3.jpg',
-  },
-];
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
+import Image from 'next/image';
 
 const Team = () => {
+  const t = useTranslations('team');
+
+  const team = [
+    { id: 1, key: 'member1', image: '/images/team-1.jpg' },
+    { id: 2, key: 'member2', image: '/images/team-2.jpg' },
+    { id: 3, key: 'member3', image: '/images/team-3.jpg' },
+  ];
+
   return (
     <section className="py-24 bg-[#f5f1eb]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] text-[#8b7355] uppercase mb-4">
-            Đội Ngũ
+            {t('subtitle')}
           </p>
           <h2 className="text-4xl md:text-5xl font-light text-[#2c3e50] mb-6">
-            Những Người Đồng Hành
+            {t('title')}
           </h2>
           <div className="w-24 h-[1px] bg-[#8b7355] mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Đội ngũ chuyên gia tận tâm của chúng tôi sẵn sàng đồng hành cùng bạn 
-            trong hành trình chữa lành và khám phá bản thân.
+            {t('description')}
           </p>
         </div>
 
@@ -52,7 +38,7 @@ const Team = () => {
               <div className="relative w-64 h-64 mx-auto mb-6 rounded-full overflow-hidden">
                 <Image
                   src={member.image}
-                  alt={member.name}
+                  alt={t(`members.${member.key}.name`)}
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                 />
@@ -60,13 +46,13 @@ const Team = () => {
 
               {/* Info */}
               <h3 className="text-2xl font-light text-[#2c3e50] mb-2">
-                {member.name}
+                {t(`members.${member.key}.name`)}
               </h3>
               <p className="text-sm tracking-widest text-[#8b7355] uppercase mb-4">
-                {member.role}
+                {t(`members.${member.key}.role`)}
               </p>
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
-                {member.bio}
+                {t(`members.${member.key}.bio`)}
               </p>
 
               {/* Social Links */}
@@ -97,7 +83,7 @@ const Team = () => {
             href="/team"
             className="btn-secondary"
           >
-            Xem Chi Tiết Đội Ngũ
+            {t('viewDetail')}
           </Link>
         </div>
       </div>

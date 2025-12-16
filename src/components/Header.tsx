@@ -1,18 +1,27 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
+import { Link, usePathname, useRouter } from '@/i18n/routing';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations('nav');
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
   const navItems = [
-    { name: 'Trang Chủ', href: '/' },
-    { name: 'Giới Thiệu', href: '/about' },
-    { name: 'Dịch Vụ', href: '/services' },
-    { name: 'Đội Ngũ', href: '/team' },
-    { name: 'Liên Hệ', href: '/contact' },
+    { name: t('home'), href: '/' },
+    { name: t('about'), href: '/about' },
+    { name: t('services'), href: '/services' },
+    { name: t('team'), href: '/team' },
+    { name: t('contact'), href: '/contact' },
   ];
+
+  const switchLocale = (newLocale: 'vi' | 'en') => {
+    router.replace(pathname, { locale: newLocale });
+  };
 
   return (
     <header className="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
@@ -24,7 +33,7 @@ const Header = () => {
               MAISON
             </div>
             <span className="text-xs tracking-widest text-[#8b7355] uppercase">
-              Sound Healing
+              Healing
             </span>
           </Link>
 
@@ -39,8 +48,26 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            
+            {/* Language Switcher */}
+            <div className="flex items-center space-x-2 border-l pl-6 ml-2">
+              <button
+                onClick={() => switchLocale('vi')}
+                className={`text-sm ${locale === 'vi' ? 'text-[#8b7355] font-medium' : 'text-gray-500 hover:text-gray-700'}`}
+              >
+                VI
+              </button>
+              <span className="text-gray-300">|</span>
+              <button
+                onClick={() => switchLocale('en')}
+                className={`text-sm ${locale === 'en' ? 'text-[#8b7355] font-medium' : 'text-gray-500 hover:text-gray-700'}`}
+              >
+                EN
+              </button>
+            </div>
+
             <Link href="/booking" className="btn-primary">
-              Đặt Lịch
+              {t('booking')}
             </Link>
           </div>
 
@@ -89,9 +116,26 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Mobile Language Switcher */}
+              <div className="flex items-center space-x-4 px-4 py-2">
+                <button
+                  onClick={() => { switchLocale('vi'); setIsOpen(false); }}
+                  className={`text-sm ${locale === 'vi' ? 'text-[#8b7355] font-medium' : 'text-gray-500'}`}
+                >
+                  Tiếng Việt
+                </button>
+                <button
+                  onClick={() => { switchLocale('en'); setIsOpen(false); }}
+                  className={`text-sm ${locale === 'en' ? 'text-[#8b7355] font-medium' : 'text-gray-500'}`}
+                >
+                  English
+                </button>
+              </div>
+
               <div className="px-4 pt-2">
                 <Link href="/booking" className="btn-primary block text-center">
-                  Đặt Lịch
+                  {t('booking')}
                 </Link>
               </div>
             </div>
