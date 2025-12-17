@@ -8,10 +8,10 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   return {
-    title: locale === 'vi' ? 'Liên Hệ | Maison Sound Healing' : 'Contact | Maison Sound Healing',
+    title: locale === 'vi' ? 'Liên Hệ | Maison Healing' : 'Contact | Maison Healing',
     description: locale === 'vi'
-      ? 'Liên hệ với Maison Sound Healing để đặt lịch tư vấn hoặc đặt câu hỏi về các dịch vụ của chúng tôi.'
-      : 'Contact Maison Sound Healing to schedule a consultation or ask questions about our services.',
+      ? 'Liên hệ với Maison Healing để đặt lịch tư vấn hoặc đặt câu hỏi về các dịch vụ của chúng tôi.'
+      : 'Contact Maison Healing to schedule a consultation or ask questions about our services.',
   };
 }
 
@@ -50,7 +50,7 @@ export default async function ContactPage({ params }: Props) {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Maison Sound Healing Location"
+          title="Maison Healing Location"
         ></iframe>
       </section>
     </>

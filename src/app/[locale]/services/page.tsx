@@ -9,7 +9,7 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   return {
-    title: locale === 'vi' ? 'Dịch Vụ | Maison Sound Healing' : 'Services | Maison Sound Healing',
+    title: locale === 'vi' ? 'Dịch Vụ | Maison Healing' : 'Services | Maison Healing',
     description: locale === 'vi'
       ? 'Khám phá các dịch vụ chữa lành của chúng tôi: Âm thanh trị liệu, Thiền định, Yoga Yin, Breathwork và nhiều hơn nữa.'
       : 'Discover our healing services: Sound Healing, Meditation, Yin Yoga, Breathwork and more.',
@@ -30,7 +30,7 @@ const services = [
       'Giải phóng cảm xúc tiêu cực',
     ],
     duration: '60 phút',
-    price: '999,000đ',
+    price: '400,000đ',
     image: '/images/service-sound.jpg',
   },
   {
@@ -46,7 +46,7 @@ const services = [
       'Phát triển mindfulness',
     ],
     duration: '60 phút',
-    price: '999,000đ',
+    price: '400,000đ',
     image: '/images/service-meditation.jpg',
   },
   {
@@ -78,7 +78,7 @@ const services = [
       'Cải thiện hệ hô hấp',
     ],
     duration: '120 phút',
-    price: '1,999,000đ',
+    price: '800,000đ',
     image: '/images/service-breathwork.jpg',
   },
   {

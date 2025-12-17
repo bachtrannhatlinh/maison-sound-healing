@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Maison Sound Healing | Âm Thanh Trị Liệu & Thiền Định",
+    "title": "Maison Healing | Âm Thanh Trị Liệu & Thiền Định",
     "description": "Trung tâm chữa lành toàn diện kết hợp trí tuệ cổ đại với y học hiện đại. Trải nghiệm âm thanh trị liệu, thiền định, yoga và các phương pháp chữa lành tâm hồn."
   },
   "nav": {
@@ -13,7 +13,7 @@
   },
   "hero": {
     "welcome": "Chào mừng đến với",
-    "title": "Maison Sound Healing",
+    "title": "Maison Healing",
     "subtitle": "Kết Hợp Trí Tuệ Cổ Đại Với Y Học Hiện Đại",
     "description": "Trải nghiệm âm thanh trị liệu, thiền định, yoga và các phương pháp chữa lành toàn diện cho tâm hồn và cơ thể",
     "exploreServices": "Khám Phá Dịch Vụ",
@@ -24,7 +24,7 @@
     "title": "Kết Hợp Trí Tuệ Cổ Đại Với Y Học Hiện Đại",
     "quote": "Tâm hồn luôn biết cách để chữa lành chính nó. Thách thức là làm sao để tĩnh lặng tâm trí.",
     "quoteAuthor": "— Caroline Myss",
-    "paragraph1": "Maison Sound Healing được thành lập với sứ mệnh mang đến những trải nghiệm chữa lành toàn diện, kết hợp giữa y học phương Đông truyền thống và khoa học hiện đại.",
+    "paragraph1": "Maison Healing được thành lập với sứ mệnh mang đến những trải nghiệm chữa lành toàn diện, kết hợp giữa y học phương Đông truyền thống và khoa học hiện đại.",
     "paragraph2": "Chúng tôi nhận ra rằng trong khi y học phương Tây và tâm lý trị liệu đóng vai trò quan trọng trong việc kiểm soát bệnh tật, những nguyên nhân gốc rễ của triệu chứng thường không được giải quyết triệt để.",
     "learnMore": "Tìm Hiểu Thêm"
   },
@@ -39,31 +39,25 @@
         "title": "Âm Thanh Trị Liệu",
         "description": "Sử dụng chuông xoay Tây Tạng, gong và các nhạc cụ thiêng liêng để tạo ra tần số chữa lành, giúp cân bằng năng lượng cơ thể.",
         "duration": "60 phút",
-        "price": "999,000đ"
+        "price": "400,000đ"
       },
       "meditation": {
         "title": "Thiền Định",
         "description": "Các buổi thiền định hướng dẫn giúp bạn kết nối với nội tâm, giải phóng căng thẳng và tìm lại sự bình yên.",
         "duration": "60 phút",
-        "price": "999,000đ"
+        "price": "400,000đ"
       },
       "yoga": {
         "title": "Yoga Yin",
         "description": "Thực hành giữ các tư thế trong thời gian dài để mở các đường kinh mạch, cải thiện sự cân bằng cảm xúc.",
         "duration": "75 phút",
-        "price": "1,499,000đ"
+        "price": "500,000đ"
       },
       "breathwork": {
         "title": "Breathwork",
         "description": "Kỹ thuật thở Pranayama và Holotropic giúp kiểm soát tâm trí, nâng cao năng lượng nội tại.",
         "duration": "120 phút",
-        "price": "1,999,000đ"
-      },
-      "chanting": {
-        "title": "Chanting Circle",
-        "description": "Thực hành tụng \"Om\" trong nhóm, kích thích dây thần kinh phế vị, mang lại sự thư giãn và bình an nội tại.",
-        "duration": "60 phút",
-        "price": "999,000đ"
+        "price": "800,000đ"
       },
       "retreat": {
         "title": "Retreat & Workshop",
@@ -101,7 +95,7 @@
     "description": "Kết hợp trí tuệ cổ đại với khoa học hiện đại, chúng tôi mang đến những trải nghiệm chữa lành toàn diện cho tâm hồn và cơ thể.",
     "quickLinks": "Liên Kết Nhanh",
     "contactTitle": "Liên Hệ",
-    "copyright": "© {year} Maison Sound Healing. All rights reserved.",
+    "copyright": "© {year} Maison Healing. All rights reserved.",
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản sử dụng"
   },
@@ -118,7 +112,7 @@
       "member1": {
         "name": "Nguyễn Minh Tâm",
         "role": "Giám đốc Y khoa, Người sáng lập",
-        "bio": "Bác sĩ với hơn 15 năm kinh nghiệm, được đào tạo về y học cổ truyền tại Ấn Độ và Tây Tạng."
+        "bio": "Bác sĩ có kinh nghiệm, được đào tạo về y học cổ truyền tại Ấn Độ và Tây Tạng."
       },
       "member2": {
         "name": "Trần Thanh Hà",

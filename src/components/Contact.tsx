@@ -45,7 +45,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-[#2c3e50] mb-1">{t('phone')}</h4>
-                  <p className="text-gray-600">+84 123 456 789</p>
+                  <p className="text-gray-600">+84 336256356</p>
                 </div>
               </div>
 
@@ -57,7 +57,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-[#2c3e50] mb-1">{t('email')}</h4>
-                  <p className="text-gray-600">info@maisonsoundhealing.com</p>
+                  <p className="text-gray-600">physiofrench@gmail.com</p>
                 </div>
               </div>
 
@@ -139,7 +139,6 @@ const Contact = () => {
                   <option value="meditation">Meditation</option>
                   <option value="yoga">Yin Yoga</option>
                   <option value="breathwork">Breathwork</option>
-                  <option value="chanting">Chanting Circle</option>
                   <option value="retreat">Retreat & Workshop</option>
                 </select>
               </div>

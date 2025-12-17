@@ -5,7 +5,7 @@ import { schemaTypes } from './schemas';
 
 export default defineConfig({
   name: 'maison-sound-healing',
-  title: 'Maison Sound Healing',
+  title: 'Maison Healing',
 
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'your-project-id',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Maison Sound Healing | Sound Therapy & Meditation",
+    "title": "Maison Healing | Sound Therapy & Meditation",
     "description": "A comprehensive healing center combining ancient wisdom with modern medicine. Experience sound therapy, meditation, yoga, and holistic healing methods."
   },
   "nav": {
@@ -13,7 +13,7 @@
   },
   "hero": {
     "welcome": "Welcome to",
-    "title": "Maison Sound Healing",
+    "title": "Maison Healing",
     "subtitle": "Combining Ancient Wisdom With Modern Medicine",
     "description": "Experience sound therapy, meditation, yoga, and holistic healing methods for mind and body",
     "exploreServices": "Explore Services",
@@ -24,7 +24,7 @@
     "title": "Combining Ancient Wisdom With Modern Medicine",
     "quote": "The soul always knows what to do to heal itself. The challenge is to silence the mind.",
     "quoteAuthor": "— Caroline Myss",
-    "paragraph1": "Maison Sound Healing was founded with the mission of bringing comprehensive healing experiences, combining traditional Eastern medicine and modern science.",
+    "paragraph1": "Maison Healing was founded with the mission of bringing comprehensive healing experiences, combining traditional Eastern medicine and modern science.",
     "paragraph2": "We recognize that while Western medicine and psychotherapy play important roles in disease management, the root causes of symptoms are often not thoroughly addressed.",
     "learnMore": "Learn More"
   },
@@ -59,12 +59,6 @@
         "duration": "120 minutes",
         "price": "$82"
       },
-      "chanting": {
-        "title": "Chanting Circle",
-        "description": "Group \"Om\" chanting practice, stimulating the vagus nerve, bringing relaxation and inner peace.",
-        "duration": "60 minutes",
-        "price": "$42"
-      },
       "retreat": {
         "title": "Retreat & Workshop",
         "description": "2-3 day retreat courses in nature, combining multiple healing methods.",
@@ -78,7 +72,7 @@
     "title": "Start Your Journey With Us",
     "description": "We are always ready to listen and advise you. Contact us to begin your own healing journey.",
     "address": "Address",
-    "addressValue": "123 Nguyen Hue Street, District 1, HCMC",
+    "addressValue": "3A Che Lan Vien, Da Nang",
     "phone": "Phone",
     "email": "Email",
     "hours": "Working Hours",
@@ -101,7 +95,7 @@
     "description": "Combining ancient wisdom with modern science, we bring comprehensive healing experiences for mind and body.",
     "quickLinks": "Quick Links",
     "contactTitle": "Contact",
-    "copyright": "© {year} Maison Sound Healing. All rights reserved.",
+    "copyright": "© {year} Maison Healing. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use"
   },

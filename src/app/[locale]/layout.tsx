@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: metadata.title,
       description: metadata.description,
       url: "https://maisonsoundhealing.com",
-      siteName: "Maison Sound Healing",
+      siteName: "Maison Healing",
       locale: locale === 'vi' ? "vi_VN" : "en_US",
       type: "website",
     },

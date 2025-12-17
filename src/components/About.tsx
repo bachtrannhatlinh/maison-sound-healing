@@ -16,7 +16,7 @@ const About = () => {
             <div className="aspect-[4/5] relative overflow-hidden">
               <Image
                 src="/images/about-image.jpg"
-                alt="Maison Sound Healing"
+                alt="Maison Healing"
                 fill
                 className="object-cover"
               />

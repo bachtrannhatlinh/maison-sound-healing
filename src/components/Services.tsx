@@ -30,11 +30,6 @@ const Services = () => {
     },
     {
       id: 5,
-      key: 'chanting',
-      image: '/images/service-chanting.jpg',
-    },
-    {
-      id: 6,
       key: 'retreat',
       image: '/images/service-retreat.jpg',
     },

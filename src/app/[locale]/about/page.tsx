@@ -9,10 +9,10 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   return {
-    title: locale === 'vi' ? 'Giới Thiệu | Maison Sound Healing' : 'About Us | Maison Sound Healing',
+    title: locale === 'vi' ? 'Giới Thiệu | Maison Healing' : 'About Us | Maison Healing',
     description: locale === 'vi' 
-      ? 'Tìm hiểu về Maison Sound Healing - Trung tâm chữa lành toàn diện kết hợp trí tuệ cổ đại với y học hiện đại.'
-      : 'Learn about Maison Sound Healing - A holistic healing center combining ancient wisdom with modern medicine.',
+      ? 'Tìm hiểu về Maison Healing - Trung tâm chữa lành toàn diện kết hợp trí tuệ cổ đại với y học hiện đại.'
+      : 'Learn about Maison Healing - A holistic healing center combining ancient wisdom with modern medicine.',
   };
 }
 
@@ -52,14 +52,14 @@ export default async function AboutPage({ params }: Props) {
 
           <div className="prose prose-lg max-w-none text-gray-600">
             <p className="leading-relaxed mb-6">
-              Maison Sound Healing được thành lập với niềm tin rằng sự chữa lành thực sự 
+              Maison Healing được thành lập với niềm tin rằng sự chữa lành thực sự 
               đến từ sự kết hợp hài hòa giữa trí tuệ cổ đại và khoa học hiện đại. Chúng tôi 
               nhận ra rằng trong khi y học phương Tây đóng vai trò quan trọng trong việc 
               kiểm soát bệnh tật, những nguyên nhân gốc rễ của các triệu chứng thường 
               không được giải quyết triệt để.
             </p>
             <p className="leading-relaxed mb-6">
-              Với hơn 15 năm kinh nghiệm trong lĩnh vực y học và chữa lành, đội ngũ của 
+              Bác sĩ có kinh nghiệm trong lĩnh vực y học và chữa lành, đội ngũ của 
               chúng tôi đã được đào tạo bởi những bậc thầy từ khắp nơi trên thế giới - 
               từ các nhà sư Tây Tạng đến các guru Ấn Độ, từ các pháp sư bản địa đến 
               các nhà khoa học hàng đầu.

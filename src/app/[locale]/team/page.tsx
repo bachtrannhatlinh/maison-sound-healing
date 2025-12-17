@@ -9,10 +9,10 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
   return {
-    title: locale === 'vi' ? 'Đội Ngũ | Maison Sound Healing' : 'Our Team | Maison Sound Healing',
+    title: locale === 'vi' ? 'Đội Ngũ | Maison Healing' : 'Our Team | Maison Healing',
     description: locale === 'vi'
-      ? 'Gặp gỡ đội ngũ chuyên gia tận tâm của Maison Sound Healing.'
-      : 'Meet the dedicated team of experts at Maison Sound Healing.',
+      ? 'Gặp gỡ đội ngũ chuyên gia tận tâm của Maison Healing.'
+      : 'Meet the dedicated team of experts at Maison Healing.',
   };
 }
 
@@ -21,7 +21,7 @@ const team = [
     id: 1,
     name: 'Nguyễn Minh Tâm',
     role: 'Giám đốc Y khoa, Người sáng lập',
-    bio: 'Bác sĩ với hơn 15 năm kinh nghiệm trong lĩnh vực y học tổng hợp. Được đào tạo về y học cổ truyền tại Ấn Độ và Tây Tạng. Chuyên gia về âm thanh trị liệu và thiền định.',
+    bio: 'Bác sĩ có kinh nghiệm trong lĩnh vực y học tổng hợp. Được đào tạo về y học cổ truyền tại Ấn Độ và Tây Tạng. Chuyên gia về âm thanh trị liệu và thiền định.',
     education: [
       'Tiến sĩ Y khoa - Đại học Y Hà Nội',
       'Chứng chỉ Ayurveda - Kerala, Ấn Độ',

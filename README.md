@@ -1,4 +1,4 @@
-# Maison Sound Healing
+# Maison Healing
 
 Website cho trung tâm chữa lành toàn diện, kết hợp trí tuệ cổ đại với y học hiện đại.
 
