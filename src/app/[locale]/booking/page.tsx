@@ -6,7 +6,7 @@ import Link from 'next/link';
 const services = [
   { id: 'sound-healing', name: 'Âm Thanh Trị Liệu', duration: '60 phút', price: '400,000đ' },
   { id: 'meditation', name: 'Thiền Định', duration: '60 phút', price: '400,000đ' },
-  { id: 'yin-yoga', name: 'Yoga Yin', duration: '75 phút', price: '500,000đ' },
+  { id: 'yin-yoga', name: 'Yoga Yin', duration: '75 phút', price: '550,000đ' },
   { id: 'breathwork', name: 'Breathwork', duration: '120 phút', price: '800,000đ' },
 ];
 

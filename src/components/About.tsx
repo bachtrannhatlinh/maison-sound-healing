@@ -31,8 +31,7 @@ const About = () => {
               {t('subtitle')}
             </p>
             <h2 className="text-4xl md:text-5xl font-light text-[#2c3e50] mb-8 leading-tight">
-              {t('title').split(' ').slice(0, 4).join(' ')}<br />
-              {t('title').split(' ').slice(4).join(' ')}
+              {t('title')}
             </h2>
             
             <blockquote className="border-l-2 border-[#8b7355] pl-6 my-8 italic text-xl text-gray-600">
