@@ -88,7 +88,7 @@ export default async function CoursePage({ params }: Props) {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('/images/course-hero.jpg')` }}
+          style={{ backgroundImage: `url('/images/banner-course.jpg')` }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
         </div>

@@ -23,12 +23,12 @@ export function CourseHero({
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: course.bannerImage
-            ? `url('${course.bannerImage}')`
+          backgroundImage: course.bannerImageCommon
+            ? `url('${course.bannerImageCommon}')`
             : undefined,
         }}
       >
-        {!course.bannerImage && (
+        {!course.bannerImageCommon && (
           <Image
             src={course.image}
             alt={title}
@@ -39,14 +39,14 @@ export function CourseHero({
         )}
         <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/50 to-black/70"></div>
       </div>
-      <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+      <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide mb-4 text-[#FAE100] font-sans font-extrabold capitalize">
           {title}
         </h1>
         <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
           {subtitle}
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm md:text-base">
+        {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm md:text-base">
           <div className="flex items-center gap-2">
             <svg
               className="w-5 h-5"
@@ -88,7 +88,7 @@ export function CourseHero({
           <span className="text-2xl md:text-3xl font-light text-[#d4af37]">
             {price}
           </span>
-        </div>
+        </div> */}
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">

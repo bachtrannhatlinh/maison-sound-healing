@@ -4,7 +4,7 @@ export interface CourseData {
   level: 'beginner' | 'intermediate' | 'advanced' | 'all';
   image: string;
   heroImage: string;
-  bannerImage?: string;
+  bannerImageCommon?: string;
   hasSpecialOffers?: boolean;
 }
 

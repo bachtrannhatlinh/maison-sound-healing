@@ -6,6 +6,6 @@ export const introCourse: CourseData = {
   level: 'all',
   image: '/images/course-intro.jpg',
   heroImage: '/images/course-intro-hero.jpg',
-  bannerImage: '/images/banner-course-basic.jpg',
+  bannerImageCommon: '/images/banner-course-common.jpg',
   hasSpecialOffers: false,
 };
