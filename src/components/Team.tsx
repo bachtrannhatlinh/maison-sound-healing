@@ -9,8 +9,8 @@ const Team = () => {
 
   const team = [
     { id: 1, key: 'member1', image: '/images/team-1.jpg' },
-    { id: 2, key: 'member2', image: '/images/team-2.jpg' },
-    { id: 3, key: 'member3', image: '/images/team-3.jpg' },
+    // { id: 2, key: 'member2', image: '/images/team-2.jpg' },
+    // { id: 3, key: 'member3', image: '/images/team-3.jpg' },
   ];
 
   return (
@@ -31,7 +31,7 @@ const Team = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">  
           {team.map((member) => (
             <div key={member.id} className="text-center group">
               {/* Image */}

@@ -6,6 +6,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "course": "Course",
     "services": "Services",
     "team": "Team",
     "contact": "Contact",
@@ -145,6 +146,273 @@
         "author": "Le Minh Chau",
         "role": "Doctor"
       }
+    }
+  },
+  "course": {
+    "subtitle": "Courses",
+    "title": "Heal Yourself With Sound",
+    "description": "Discover courses on singing bowls and Himalayan sound healing methods. We aim to create a healing space where everyone is warmly welcomed.",
+    "viewAll": "View All Courses",
+    "detail": "View Details",
+    "register": "Register",
+    "level": "Level",
+    "duration": "Duration",
+    "curriculum": "Curriculum",
+    "benefits": "Benefits",
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "all": "All Levels"
+    },
+    "items": {
+      "basic": {
+        "title": "Basic Course",
+        "subtitle": "Applying Singing Bowls in Daily Life",
+        "description": "Today, singing bowls have become a positive life support tool applied in meditation, yoga, spa, or therapeutic support for physical and mental issues. To apply this method safely and effectively, we have compiled essential foundational knowledge in our Singing Bowl Application courses. The learning path from Basic to Advanced is suitable for different purposes and audiences.",
+        "intro": "The first step to get familiar with this method, let's start with the Basic course together.",
+        "duration": "2-3 days (08:30 - 16:00)",
+        "price": "$250",
+        "location": "Maison Healing - Da Nang, Vietnam",
+        "highlights": {
+          "title": "Course Highlights at Maison Healing",
+          "items": [
+            "Learn to approach Himalayan singing bowl sound therapy safely and effectively",
+            "Practical course content that is easy to visualize and practice",
+            "Shortened learning time, affordable participation fee for everyone",
+            "Lifetime access to review sessions and knowledge updates",
+            "10% discount on products and other activities",
+            "Friendly learning environment, close to nature"
+          ]
+        },
+        "suitable": {
+          "title": "This course is suitable for you if",
+          "items": [
+            "You want to learn and apply sound therapy methods for yourself or proactively care for your loved ones",
+            "You are looking for opportunities to change yourself, develop self-healing, and explore the journey to become a professional Sound Healer",
+            "You practice yoga, meditation, or work in therapy, healing, coaching",
+            "You have a singing bowl but don't know how to use it safely and effectively"
+          ]
+        },
+        "theory": {
+          "title": "Theory Section",
+          "items": [
+            "Learn about the history, operating principles, effects of singing bowls and the path of bowl therapy",
+            "Study the chakra system and the compatibility between chakras and sound for therapeutic applications"
+          ]
+        },
+        "practice": {
+          "title": "Practical Application of Singing Bowls",
+          "items": [
+            "Bowl striking techniques from basic to advanced with various mallets using different methods",
+            "Techniques for using bowls for self-cultivation, meditation, to help you relax and develop consciousness",
+            "Practice Scan and Chanting sessions for cleansing, balancing, and protecting energy",
+            "Pain relief therapy, support for emotional and mental health issues",
+            "Guide to applying singing bowls in daily life: Yoga, Spa, meditation, space cleansing, supporting pregnant mothers and children",
+            "Guide to setting up a complete therapy session with 1-2-3 bowls",
+            "Precautions when using bowls, guidance on energy release for health and peace on the healing journey",
+            "End-of-course practical assessment"
+          ]
+        },
+        "includes": {
+          "title": "Participation Fee Includes",
+          "items": [
+            "Materials, bowls, and tools for practice throughout the course",
+            "Plant-based lunch (for in-person courses)",
+            "Maison Healing commemorative certificate upon course completion",
+            "Post-course support via group chat"
+          ]
+        },
+        "specialOffers": {
+          "title": "We always show love to",
+          "items": [
+            "Yoga instructors, therapists, healers, coaches, community service workers, charitable organizations",
+            "Those registering for 2 or more courses",
+            "Group registrations of 2 or more people",
+            "Parents with children under 5 years old"
+          ]
+        },
+        "discountDetails": {
+          "title": "Discount Policy",
+          "items": [
+            "10% discount for early registration and full payment 2 weeks in advance",
+            "15% discount for those working in yoga, coaching, therapy, healthcare, community service, parents with children under 3 years old",
+            "20% discount when registering for both courses or as a group of 2+ people with full payment 2 weeks in advance"
+          ]
+        },
+        "support": "We also help you find and receive quality sound healing items imported directly from Nepal such as: singing bowls, tingsha, gong... at reasonable prices."
+      },
+      "advanced": {
+        "title": "Advanced Course - In-Depth",
+        "subtitle": "Specialization",
+        "description": "A course for those who have completed the basic course and want to enhance their skills. Over 10 in-depth playing techniques, detailed guidance on organizing community activities, advanced knowledge about chakra and meridians.",
+        "duration": "3 days",
+        "price": "$330",
+        "highlights": {
+          "title": "Course Highlights",
+          "items": [
+            "Master many in-depth healing techniques",
+            "Able to organize Sound Bath for small groups",
+            "Deep understanding of energy and adjustments",
+            "Practitioner Level 2 certification",
+            "Introduced in Maison Healing's network"
+          ]
+        },
+        "suitable": {
+          "title": "This course is suitable for you if",
+          "items": [
+            "Students who have completed the basic course",
+            "Sound healers wanting to enhance skills",
+            "Those wanting to develop a therapy career",
+            "Therapists wanting to add new methods"
+          ]
+        },
+        "theory": {
+          "title": "Advanced Theory Section",
+          "items": [
+            "In-depth knowledge of chakra and energy systems",
+            "Understanding frequencies and brainwaves",
+            "How to read energy and adjust appropriately"
+          ]
+        },
+        "practice": {
+          "title": "In-Depth Practice Section",
+          "items": [
+            "Over 10 in-depth bowl sessions for different cases",
+            "Sound Bath techniques for groups and communities",
+            "How to build and arrange a therapy session",
+            "Practice with real-life situations",
+            "Guide to coordinating community activities"
+          ]
+        },
+        "includes": {
+          "title": "Course Includes",
+          "items": [
+            "3 days of in-depth learning",
+            "Advanced materials and practice exercises",
+            "Practitioner Level 2 certification",
+            "1-on-1 mentoring after the course",
+            "Access to Maison events"
+          ]
+        }
+      },
+      "extended": {
+        "title": "Advanced Course - Extended",
+        "subtitle": "Expanding Skills",
+        "description": "A course for those who want to become versatile sound healing experts. Advanced techniques, use of other sound healing instruments, Sound Healing coordination skills, and professional mindset.",
+        "duration": "3 days",
+        "price": "$420",
+        "highlights": {
+          "title": "Course Highlights",
+          "items": [
+            "Become a versatile sound healing expert",
+            "Able to organize large workshops and events",
+            "Build your personal brand",
+            "Master Practitioner certification",
+            "Partnership opportunities with Maison Healing"
+          ]
+        },
+        "suitable": {
+          "title": "This course is suitable for you if",
+          "items": [
+            "Students who have completed the advanced in-depth course",
+            "Professional sound healers",
+            "Those wanting to build a career in the field",
+            "Entrepreneurs in the wellness industry"
+          ]
+        },
+        "theory": {
+          "title": "Expert Knowledge",
+          "items": [
+            "Professional mindset and ethics",
+            "Marketing and personal branding",
+            "Event management and coordination"
+          ]
+        },
+        "practice": {
+          "title": "Advanced Practice",
+          "items": [
+            "Advanced techniques and creative variations",
+            "Using Gong, Tingsha, Shruti Box and other instruments",
+            "Combining singing bowls with meditation and yoga",
+            "Building workshop programs",
+            "Sound Healing event coordination skills",
+            "Practice organizing real events"
+          ]
+        },
+        "includes": {
+          "title": "Course Includes",
+          "items": [
+            "3 days of intensive training",
+            "Marketing materials and templates",
+            "Master Practitioner certification",
+            "3-month mentoring program",
+            "Partnership opportunities with Maison"
+          ]
+        }
+      },
+      "intro": {
+        "title": "Introduction Course",
+        "subtitle": "Singing Bowl Experience",
+        "description": "A course for those curious about sound healing who want to experience before diving deeper. You will learn about singing bowls, basic techniques, and experience a relaxing Sound Bath.",
+        "duration": "1 session (3 hours)",
+        "price": "$25",
+        "highlights": {
+          "title": "Course Highlights",
+          "items": [
+            "Basic understanding of sound healing and singing bowls",
+            "Hands-on experience with singing bowls",
+            "Relaxation with 45-minute Sound Bath",
+            "Connect with wellness-loving community",
+            "Receive 10% discount voucher for next course"
+          ]
+        },
+        "suitable": {
+          "title": "This course is suitable for you if",
+          "items": [
+            "Anyone curious about sound healing",
+            "Those wanting to experience before learning deeply",
+            "Those needing relaxation and stress relief",
+            "Those seeking new healing methods"
+          ]
+        },
+        "theory": {
+          "title": "Course Content",
+          "items": [
+            "Introduction to singing bowls and origins",
+            "Learn about 3 main singing bowl methods",
+            "Effects of singing bowls on health"
+          ]
+        },
+        "practice": {
+          "title": "Hands-on Experience",
+          "items": [
+            "Basic techniques for using bowls",
+            "Deep relaxation Sound Bath experience",
+            "Q&A and experience sharing"
+          ]
+        },
+        "includes": {
+          "title": "Course Includes",
+          "items": [
+            "1 session of 3-hour experience",
+            "Tea and snacks",
+            "Basic introductory materials",
+            "10% voucher for next course",
+            "45-minute Sound Bath session"
+          ]
+        }
+      }
+    },
+    "discounts": {
+      "title": "Special Offers",
+      "early": "10% discount for early registration at least 15 days before the course.",
+      "special": "20% discount for: Those from other provinces, Yoga instructors, therapists, healers, community service workers, those registering for both basic and advanced courses, groups of 2."
+    },
+    "cta": {
+      "title": "Start Your Healing Journey",
+      "description": "Contact us now for consultation and register for the right course.",
+      "button": "Contact for Consultation"
     }
   }
 }

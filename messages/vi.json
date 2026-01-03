@@ -6,6 +6,7 @@
   "nav": {
     "home": "Trang Chủ",
     "about": "Giới Thiệu",
+    "course": "Khoá Học",
     "services": "Dịch Vụ",
     "team": "Đội Ngũ",
     "contact": "Liên Hệ",
@@ -110,19 +111,9 @@
     "viewDetail": "Xem Chi Tiết Đội Ngũ",
     "members": {
       "member1": {
-        "name": "Nguyễn Minh Tâm",
-        "role": "Giám đốc Y khoa, Người sáng lập",
-        "bio": "Bác sĩ có kinh nghiệm, được đào tạo về y học cổ truyền tại Ấn Độ và Tây Tạng."
-      },
-      "member2": {
-        "name": "Trần Thanh Hà",
+        "name": "Bạch Trần Ái Diễm",
         "role": "Chuyên gia Yoga & Thiền định",
         "bio": "Giáo viên Yoga RYT-500, chuyên về Yin Yoga và thiền định mindfulness."
-      },
-      "member3": {
-        "name": "Lê Hoàng Nam",
-        "role": "Chuyên gia Âm thanh Trị liệu",
-        "bio": "Nghệ sĩ âm thanh trị liệu được chứng nhận, 10 năm nghiên cứu về tần số chữa lành."
       }
     }
   },
@@ -145,6 +136,273 @@
         "author": "Lê Minh Châu",
         "role": "Bác sĩ"
       }
+    }
+  },
+  "course": {
+    "subtitle": "Khoá Học",
+    "title": "Làm Lành Cho Chính Mình Bằng Âm Thanh",
+    "description": "Khám phá các khóa học về chuông xoay và phương pháp trị liệu bằng âm thanh Himalaya. Chúng tôi mong muốn tạo ra một không gian chữa lành, nơi bất kỳ ai cũng được đón tiếp nhiệt thành.",
+    "viewAll": "Xem Tất Cả Khoá Học",
+    "detail": "Xem Chi Tiết",
+    "register": "Đăng Ký",
+    "level": "Trình độ",
+    "duration": "Thời lượng",
+    "curriculum": "Nội dung khoá học",
+    "benefits": "Lợi ích",
+    "levels": {
+      "beginner": "Cơ bản",
+      "intermediate": "Trung cấp",
+      "advanced": "Nâng cao",
+      "all": "Tất cả trình độ"
+    },
+    "items": {
+      "basic": {
+        "title": "Khoá Cơ Bản",
+        "subtitle": "Ứng dụng chuông xoay trong đời sống",
+        "description": "Ngày nay chuông xoay đã trở thành phương tiện hỗ trợ tích cực đời sống như ứng dụng vào thiền định, yoga, spa hay hỗ trợ trị liệu các vấn đề về cơ thể lẫn tinh thần. Để có thể ứng dụng phương pháp này một cách an toàn và hiệu quả, chúng tôi đã đúc kết những kiến thức nền tảng quan trọng trong các khoá học Ứng dụng chuông xoay trong đời sống. Lộ trình học từ Cơ bản đến Nâng cao phù hợp với mục đích ứng dụng chuông của từng đối tượng khác nhau.",
+        "intro": "Bước đầu tiên để bạn làm quen với phương pháp này, chúng ta sẽ cùng nhau đến với khoá Cơ bản.",
+        "duration": "2-3 ngày (08:30 - 16:00)",
+        "price": "6,000,000đ",
+        "location": "Maison Healing - 3A Chế Lan Viên, Đà Nẵng",
+        "highlights": {
+          "title": "Điểm nổi bật của khoá học tại Maison Healing",
+          "items": [
+            "Giúp bạn tiếp cận phương pháp trị liệu âm thanh bằng chuông xoay Himalaya một cách an toàn và hiệu quả",
+            "Nội dung khoá học thiết thực, đi sâu vào trọng tâm giúp bạn dễ hình dung, dễ thực hành",
+            "Thời gian học được rút ngắn, phí tham gia phù hợp với tất cả mọi người",
+            "Được tham gia học ôn, cập nhật kiến thức trọn đời",
+            "Được ưu đãi 10% khi mua sản phẩm và tham gia các hoạt động khác",
+            "Không gian học tập thân thiện, gần gũi với thiên nhiên"
+          ]
+        },
+        "suitable": {
+          "title": "Khoá học này phù hợp với bạn nếu",
+          "items": [
+            "Bạn đang muốn tìm hiểu và ứng dụng các phương pháp trị liệu bằng âm thanh cho bản thân hay chăm sóc sức khoẻ chủ động cho những người thân",
+            "Bạn đang tìm kiếm cơ hội để thay đổi bản thân, phát triển con đường chữa lành tự thân, khám phá hành trình trở thành một Sound Healer chuyên nghiệp",
+            "Bạn đang thực hành yoga, thiền định hay các công việc liên quan đến trị liệu, healing, coaching",
+            "Bạn đã có chuông nhưng chưa biết cách ứng dụng chuông sao cho an toàn và hiệu quả"
+          ]
+        },
+        "theory": {
+          "title": "Phần lý thuyết",
+          "items": [
+            "Tìm hiểu về lịch sử hình thành, nguyên lý hoạt động, các tác dụng của chuông và con đường trị liệu bằng chuông xoay",
+            "Nghiên cứu về hệ thống luân xa, sự tương thích giữa luân xa và âm thanh để ứng dụng vào trị liệu"
+          ]
+        },
+        "practice": {
+          "title": "Phần thực hành ứng dụng chuông xoay",
+          "items": [
+            "Các kỹ thuật gõ chuông từ cơ bản đến nâng cao với các loại chày theo nhiều phương pháp khác nhau",
+            "Kỹ thuật dùng chuông cho bản thân trong tu dưỡng thân tâm, thiền định, để hỗ trợ bạn thư giãn, phát triển dòng tâm thức",
+            "Thực hành các bài Scan, Chanting giúp thanh lọc, cân bằng, bảo vệ năng lượng",
+            "Trị liệu giảm đau, hỗ trợ trị liệu các vấn đề về cảm xúc, sức khoẻ tinh thần",
+            "Hướng dẫn ứng dụng chuông xoay trong đời sống như: Yoga, Spa, thiền định, thanh tẩy không gian, dùng chuông hỗ trợ cho mẹ bầu và trẻ nhỏ",
+            "Hướng dẫn setup 1 buổi trị liệu hoàn chỉnh với 1-2-3 chuông",
+            "Các lưu ý khi dùng chuông, hướng dẫn xả trượt để giúp thân khoẻ tâm an trên con đường trị liệu",
+            "Thực hành kiểm tra đánh giá cuối khoá"
+          ]
+        },
+        "includes": {
+          "title": "Phí tham gia đã bao gồm",
+          "items": [
+            "Tài liệu, chuông và dụng cụ để bạn thực hành trong suốt khoá học",
+            "Bữa trưa thuần thực vật (đối với khoá học tổ chức trực tiếp)",
+            "Chứng chỉ lưu niệm của Maison Healing sau khi hoàn thành khoá học",
+            "Hỗ trợ sau khoá học qua group chat"
+          ]
+        },
+        "specialOffers": {
+          "title": "Chúng tôi luôn dành những yêu thương đến những bạn",
+          "items": [
+            "HLV Yoga, các bạn làm trong lĩnh vực trị liệu, healing, coaching, phụng sự cộng đồng, tổ chức thiện nguyện",
+            "Đăng ký từ 2 khoá học trở lên",
+            "Đăng ký theo nhóm từ 2 người trở lên",
+            "Mẹ bỉm sữa đang nuôi con nhỏ dưới 5 tuổi"
+          ]
+        },
+        "discountDetails": {
+          "title": "Chính sách ưu đãi",
+          "items": [
+            "Ưu đãi 10% khi đăng ký sớm và hoàn tất học phí trước 2 tuần",
+            "Ưu đãi 15% với các bạn làm trong lĩnh vực yoga, coaching, trị liệu, chăm sóc sức khoẻ, phụng sự cộng đồng, ba mẹ có em bé dưới 3 tuổi",
+            "Ưu đãi 20% khi đăng ký cả 2 khoá hoặc nhóm 2 người và hoàn tất học phí trước 2 tuần"
+          ]
+        },
+        "support": "Ngoài ra chúng tôi còn hỗ trợ bạn tìm và đón những vật phẩm trị liệu bằng âm thanh chất lượng được nhập trực tiếp từ Nepal như: chuông, tingsha, gong... với mức phí hợp lý, dễ chịu."
+      },
+      "advanced": {
+        "title": "Khoá Học Nâng Cao - Chuyên Sâu",
+        "subtitle": "Chuyên môn hoá",
+        "description": "Khoá học dành cho những ai đã hoàn thành khoá cơ bản và muốn nâng cao kỹ năng. Hơn 10 bài chuông chuyên sâu, hướng dẫn chi tiết cách sắp xếp, điều phối các hoạt động cộng đồng, kiến thức nâng cao về chakra và kinh mạch.",
+        "duration": "3 ngày",
+        "price": "8,000,000đ",
+        "highlights": {
+          "title": "Điểm nổi bật của khoá học",
+          "items": [
+            "Thành thạo nhiều kỹ thuật chữa lành chuyên sâu",
+            "Có thể tổ chức Sound Bath cho nhóm nhỏ",
+            "Hiểu sâu về năng lượng và cách điều chỉnh",
+            "Chứng nhận Practitioner cấp độ 2",
+            "Được giới thiệu trong network của Maison Healing"
+          ]
+        },
+        "suitable": {
+          "title": "Khoá học này phù hợp với bạn nếu",
+          "items": [
+            "Học viên đã hoàn thành khóa cơ bản",
+            "Sound healer muốn nâng cao kỹ năng",
+            "Người muốn phát triển nghề trị liệu",
+            "Therapists muốn bổ sung phương pháp mới"
+          ]
+        },
+        "theory": {
+          "title": "Phần lý thuyết nâng cao",
+          "items": [
+            "Kiến thức chuyên sâu về chakra và hệ thống năng lượng",
+            "Hiểu về các tần số và sóng não",
+            "Cách đọc năng lượng và điều chỉnh phù hợp"
+          ]
+        },
+        "practice": {
+          "title": "Phần thực hành chuyên sâu",
+          "items": [
+            "Hơn 10 bài chuông chuyên sâu cho các trường hợp khác nhau",
+            "Kỹ thuật Sound Bath cho nhóm và cộng đồng",
+            "Cách xây dựng và sắp xếp một buổi trị liệu",
+            "Thực hành với các tình huống thực tế",
+            "Hướng dẫn điều phối các hoạt động cộng đồng"
+          ]
+        },
+        "includes": {
+          "title": "Khoá học bao gồm",
+          "items": [
+            "3 ngày học tập chuyên sâu",
+            "Tài liệu nâng cao và bài tập thực hành",
+            "Chứng nhận Practitioner Level 2",
+            "Mentoring 1-1 sau khóa học",
+            "Quyền tham gia các event của Maison"
+          ]
+        }
+      },
+      "extended": {
+        "title": "Khoá Học Nâng Cao - Mở Rộng",
+        "subtitle": "Mở rộng kỹ năng",
+        "description": "Khoá học dành cho những ai muốn trở thành chuyên gia đa năng về sound healing. Các kỹ thuật nâng cao, cách sử dụng các phương tiện chữa lành bằng âm thanh khác, kỹ năng điều phối các hoạt động Sound Healing, tư duy làm nghề.",
+        "duration": "3 ngày",
+        "price": "10,000,000đ",
+        "highlights": {
+          "title": "Điểm nổi bật của khoá học",
+          "items": [
+            "Trở thành chuyên gia đa năng về sound healing",
+            "Có thể tổ chức workshop và event lớn",
+            "Xây dựng được thương hiệu cá nhân",
+            "Chứng nhận Master Practitioner",
+            "Cơ hội hợp tác cùng Maison Healing"
+          ]
+        },
+        "suitable": {
+          "title": "Khoá học này phù hợp với bạn nếu",
+          "items": [
+            "Học viên đã hoàn thành khóa nâng cao chuyên sâu",
+            "Sound healer chuyên nghiệp",
+            "Người muốn xây dựng sự nghiệp trong lĩnh vực",
+            "Entrepreneurs trong ngành wellness"
+          ]
+        },
+        "theory": {
+          "title": "Kiến thức chuyên gia",
+          "items": [
+            "Tư duy làm nghề và đạo đức nghề nghiệp",
+            "Marketing và xây dựng thương hiệu cá nhân",
+            "Quản lý và điều phối sự kiện"
+          ]
+        },
+        "practice": {
+          "title": "Thực hành nâng cao",
+          "items": [
+            "Kỹ thuật nâng cao và biến tấu sáng tạo",
+            "Sử dụng Gong, Tingsha, Shruti Box và nhạc cụ khác",
+            "Kết hợp chuông xoay với thiền định và yoga",
+            "Xây dựng chương trình workshop",
+            "Kỹ năng điều phối Sound Healing event lớn",
+            "Thực hành tổ chức sự kiện thực tế"
+          ]
+        },
+        "includes": {
+          "title": "Khoá học bao gồm",
+          "items": [
+            "3 ngày đào tạo chuyên sâu",
+            "Bộ tài liệu marketing và template",
+            "Chứng nhận Master Practitioner",
+            "Mentoring program 3 tháng",
+            "Partnership opportunities với Maison"
+          ]
+        }
+      },
+      "intro": {
+        "title": "Khoá Học Gieo Duyên",
+        "subtitle": "Trải nghiệm chuông xoay",
+        "description": "Khoá học dành cho những ai tò mò về sound healing và muốn trải nghiệm trước khi học sâu. Bạn sẽ được tìm hiểu về chuông xoay, kỹ thuật cơ bản và trải nghiệm Sound Bath thư giãn.",
+        "duration": "1 buổi (3 giờ)",
+        "price": "500,000đ",
+        "highlights": {
+          "title": "Điểm nổi bật của khoá học",
+          "items": [
+            "Hiểu cơ bản về sound healing và chuông xoay",
+            "Trải nghiệm thực tế với chuông xoay",
+            "Được thư giãn với Sound Bath 45 phút",
+            "Kết nối với cộng đồng yêu thích wellness",
+            "Nhận voucher giảm giá 10% cho khóa tiếp theo"
+          ]
+        },
+        "suitable": {
+          "title": "Khoá học này phù hợp với bạn nếu",
+          "items": [
+            "Bất kỳ ai tò mò về sound healing",
+            "Người muốn trải nghiệm trước khi học sâu",
+            "Những ai cần thư giãn và giảm stress",
+            "Người tìm kiếm phương pháp chữa lành mới"
+          ]
+        },
+        "theory": {
+          "title": "Nội dung khoá học",
+          "items": [
+            "Giới thiệu về chuông xoay và nguồn gốc",
+            "Tìm hiểu về 3 phương pháp chuông xoay chính",
+            "Tác dụng của chuông xoay đối với sức khỏe"
+          ]
+        },
+        "practice": {
+          "title": "Trải nghiệm thực hành",
+          "items": [
+            "Kỹ thuật cơ bản để sử dụng chuông",
+            "Trải nghiệm Sound Bath thư giãn sâu",
+            "Q&A và chia sẻ kinh nghiệm"
+          ]
+        },
+        "includes": {
+          "title": "Khoá học bao gồm",
+          "items": [
+            "1 buổi 3 giờ trải nghiệm",
+            "Trà và snacks",
+            "Tài liệu giới thiệu cơ bản",
+            "Voucher 10% cho khóa học tiếp theo",
+            "Sound Bath session 45 phút"
+          ]
+        }
+      }
+    },
+    "discounts": {
+      "title": "Ưu Đãi Đặc Biệt",
+      "early": "Ưu đãi 10% đối với các bạn đăng ký sớm trước ngày tổ chức khoá học ít nhất 15 ngày.",
+      "special": "Ưu đãi 20% đối với: Các bạn ở tỉnh xa, HLV Yoga, các nhà trị liệu, healer, các bạn đang phụng sự cộng đồng, các bạn đăng ký cả 2 khoá cơ bản và nâng cao, các bạn đăng ký theo nhóm 2 người."
+    },
+    "cta": {
+      "title": "Bắt Đầu Hành Trình Chữa Lành",
+      "description": "Liên hệ ngay với chúng tôi để được tư vấn và đăng ký khoá học phù hợp.",
+      "button": "Liên Hệ Tư Vấn"
     }
   }
 }

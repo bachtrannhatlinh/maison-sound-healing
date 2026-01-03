@@ -17,21 +17,21 @@ export async function generateMetadata({ params }: Props) {
 }
 
 const team = [
-  {
-    id: 1,
-    name: 'Nguyễn Minh Tâm',
-    role: 'Giám đốc Y khoa, Người sáng lập',
-    bio: 'Bác sĩ có kinh nghiệm trong lĩnh vực y học tổng hợp. Được đào tạo về y học cổ truyền tại Ấn Độ và Tây Tạng. Chuyên gia về âm thanh trị liệu và thiền định.',
-    education: [
-      'Tiến sĩ Y khoa - Đại học Y Hà Nội',
-      'Chứng chỉ Ayurveda - Kerala, Ấn Độ',
-      'Đào tạo với các nhà sư Tây Tạng - Dharamsala',
-    ],
-    image: '/images/team-1.jpg',
-  },
+  // {
+  //   id: 1,
+  //   name: 'Nguyễn Minh Tâm',
+  //   role: 'Giám đốc Y khoa, Người sáng lập',
+  //   bio: 'Bác sĩ có kinh nghiệm trong lĩnh vực y học tổng hợp. Được đào tạo về y học cổ truyền tại Ấn Độ và Tây Tạng. Chuyên gia về âm thanh trị liệu và thiền định.',
+  //   education: [
+  //     'Tiến sĩ Y khoa - Đại học Y Hà Nội',
+  //     'Chứng chỉ Ayurveda - Kerala, Ấn Độ',
+  //     'Đào tạo với các nhà sư Tây Tạng - Dharamsala',
+  //   ],
+  //   image: '/images/team-1.jpg',
+  // },
   {
     id: 2,
-    name: 'Trần Thanh Hà',
+    name: 'Bạch Trần Ái Diễm',
     role: 'Chuyên gia Yoga & Thiền định',
     bio: 'Giáo viên Yoga RYT-500 với hơn 10 năm kinh nghiệm. Chuyên về Yin Yoga, thiền định mindfulness và sound healing. Người hướng dẫn các khóa retreat định kỳ.',
     education: [
@@ -41,30 +41,30 @@ const team = [
     ],
     image: '/images/team-2.jpg',
   },
-  {
-    id: 3,
-    name: 'Lê Hoàng Nam',
-    role: 'Chuyên gia Âm thanh Trị liệu',
-    bio: 'Nghệ sĩ âm thanh trị liệu được chứng nhận với 10 năm nghiên cứu về tần số chữa lành. Sáng lập viên của nhiều sự kiện sound bath tại Việt Nam.',
-    education: [
-      'Chứng chỉ Sound Healing - Sound Healing Academy, UK',
-      'Nghiên cứu về Nada Yoga - Rishikesh, Ấn Độ',
-      'Chứng chỉ Gong Master - Don Conreaux',
-    ],
-    image: '/images/team-3.jpg',
-  },
-  {
-    id: 4,
-    name: 'Phạm Thị Mai Anh',
-    role: 'Chuyên gia Breathwork',
-    bio: 'Người hướng dẫn breathwork với chuyên môn về Holotropic Breathing và Pranayama. Đã dẫn dắt hàng trăm buổi thở cho hàng nghìn người tham gia.',
-    education: [
-      'Chứng chỉ Holotropic Breathwork - GTT',
-      'Pranayama Teacher Training - Bihar School of Yoga',
-      'Chứng chỉ Trauma-Informed Breathwork',
-    ],
-    image: '/images/team-4.jpg',
-  },
+  // {
+  //   id: 3,
+  //   name: 'Lê Hoàng Nam',
+  //   role: 'Chuyên gia Âm thanh Trị liệu',
+  //   bio: 'Nghệ sĩ âm thanh trị liệu được chứng nhận với 10 năm nghiên cứu về tần số chữa lành. Sáng lập viên của nhiều sự kiện sound bath tại Việt Nam.',
+  //   education: [
+  //     'Chứng chỉ Sound Healing - Sound Healing Academy, UK',
+  //     'Nghiên cứu về Nada Yoga - Rishikesh, Ấn Độ',
+  //     'Chứng chỉ Gong Master - Don Conreaux',
+  //   ],
+  //   image: '/images/team-3.jpg',
+  // },
+  // {
+  //   id: 4,
+  //   name: 'Bạch Trần Ái Diễm',
+  //   role: 'Chuyên gia Breathwork',
+  //   bio: 'Người hướng dẫn breathwork với chuyên môn về Holotropic Breathing và Pranayama. Đã dẫn dắt hàng trăm buổi thở cho hàng nghìn người tham gia.',
+  //   education: [
+  //     'Chứng chỉ Holotropic Breathwork - GTT',
+  //     'Pranayama Teacher Training - Bihar School of Yoga',
+  //     'Chứng chỉ Trauma-Informed Breathwork',
+  //   ],
+  //   image: '/images/team-4.jpg',
+  // },
 ];
 
 export default async function TeamPage({ params }: Props) {

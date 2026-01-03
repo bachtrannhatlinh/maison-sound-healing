@@ -6,14 +6,25 @@ import { Link, usePathname, useRouter } from '@/i18n/routing';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [courseDropdownOpen, setCourseDropdownOpen] = useState(false);
+  const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false);
   const t = useTranslations('nav');
+  const tCourse = useTranslations('course');
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
 
+  const courseItems = [
+    { name: tCourse('items.basic.title'), href: '/course/khoa-co-ban' },
+    { name: tCourse('items.advanced.title'), href: '/course/khoa-hoc-nang-cao-chuyen-sau' },
+    { name: tCourse('items.extended.title'), href: '/course/khoa-hoc-nang-cao-mo-rong' },
+    { name: tCourse('items.intro.title'), href: '/course/khoa-hoc-gieo-duyen' },
+  ];
+
   const navItems = [
     { name: t('home'), href: '/' },
     { name: t('about'), href: '/about' },
+    { name: t('course'), href: '/course', hasDropdown: true },
     { name: t('services'), href: '/services' },
     { name: t('team'), href: '/team' },
     { name: t('contact'), href: '/contact' },
@@ -22,6 +33,13 @@ const Header = () => {
   const switchLocale = (newLocale: 'vi' | 'en') => {
     router.replace(pathname, { locale: newLocale });
   };
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/';
+    return pathname.startsWith(href);
+  };
+
+  const isDropdownItemActive = (href: string) => pathname === href;
 
   return (
     <header className="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
@@ -40,13 +58,62 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-sm tracking-widest text-gray-700 hover:text-[#8b7355] transition-colors duration-300 uppercase"
-              >
-                {item.name}
-              </Link>
+              item.hasDropdown ? (
+                <div 
+                  key={item.name}
+                  className="relative"
+                  onMouseEnter={() => setCourseDropdownOpen(true)}
+                  onMouseLeave={() => setCourseDropdownOpen(false)}
+                >
+                  <Link
+                    href={item.href}
+                    className={`flex items-center gap-1 text-sm tracking-widest transition-colors duration-300 uppercase ${
+                      isActive(item.href) ? 'text-[#8b7355] font-medium' : 'text-gray-700 hover:text-[#8b7355]'
+                    }`}
+                  >
+                    {item.name}
+                    <svg 
+                      className={`w-4 h-4 transition-transform duration-200 ${courseDropdownOpen ? 'rotate-180' : ''}`} 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </Link>
+                  
+                  {/* Dropdown Menu */}
+                  {courseDropdownOpen && (
+                    <div className="absolute top-full left-0 pt-2 w-72 z-50">
+                      <div className="bg-white shadow-lg border border-gray-100 py-2">
+                        {courseItems.map((course) => (
+                          <Link
+                            key={course.href}
+                            href={course.href}
+                            className={`block px-4 py-3 text-sm transition-colors ${
+                              isDropdownItemActive(course.href) 
+                                ? 'text-[#8b7355] font-medium bg-[#faf8f5]' 
+                                : 'text-gray-700 hover:bg-[#faf8f5] hover:text-[#8b7355]'
+                            }`}
+                          >
+                            {course.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`text-sm tracking-widest transition-colors duration-300 uppercase ${
+                    isActive(item.href) ? 'text-[#8b7355] font-medium' : 'text-gray-700 hover:text-[#8b7355]'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
             
             {/* Language Switcher */}
@@ -107,14 +174,53 @@ const Header = () => {
           <div className="md:hidden bg-white border-t">
             <div className="py-4 space-y-4">
               {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="block px-4 py-2 text-sm tracking-widest text-gray-700 hover:text-[#8b7355] uppercase"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                item.hasDropdown ? (
+                  <div key={item.name}>
+                    <button
+                      onClick={() => setMobileCoursesOpen(!mobileCoursesOpen)}
+                      className={`w-full flex items-center justify-between px-4 py-2 text-sm tracking-widest uppercase ${
+                        isActive(item.href) ? 'text-[#8b7355] font-medium' : 'text-gray-700 hover:text-[#8b7355]'
+                      }`}
+                    >
+                      {item.name}
+                      <svg 
+                        className={`w-4 h-4 transition-transform duration-200 ${mobileCoursesOpen ? 'rotate-180' : ''}`}
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    {mobileCoursesOpen && (
+                      <div className="pl-8 space-y-2 mt-2">
+                        {courseItems.map((course) => (
+                          <Link
+                            key={course.href}
+                            href={course.href}
+                            className={`block py-2 text-sm ${
+                              isDropdownItemActive(course.href) ? 'text-[#8b7355] font-medium' : 'text-gray-600 hover:text-[#8b7355]'
+                            }`}
+                            onClick={() => { setIsOpen(false); setMobileCoursesOpen(false); }}
+                          >
+                            {course.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`block px-4 py-2 text-sm tracking-widest uppercase ${
+                      isActive(item.href) ? 'text-[#8b7355] font-medium' : 'text-gray-700 hover:text-[#8b7355]'
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
               
               {/* Mobile Language Switcher */}

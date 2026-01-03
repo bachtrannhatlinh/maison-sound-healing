@@ -1,0 +1,11 @@
+export { CourseHero } from './CourseHero';
+export { CourseDescription } from './CourseDescription';
+export { CourseHighlights } from './CourseHighlights';
+export { CourseWhatYouLearn } from './CourseWhatYouLearn';
+export { CourseInfoCard } from './CourseInfoCard';
+export { CourseSpecialOffers } from './CourseSpecialOffers';
+export { CourseDiscounts } from './CourseDiscounts';
+export { CourseRelated } from './CourseRelated';
+export { CourseCTA } from './CourseCTA';
+export { CourseNavigation } from './CourseNavigation';
+export { CourseComments } from './CourseComments';

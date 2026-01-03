@@ -4,7 +4,7 @@ import { visionTool } from '@sanity/vision';
 import { schemaTypes } from './schemas';
 
 export default defineConfig({
-  name: 'maison-sound-healing',
+  name: 'maison-healing',
   title: 'Maison Healing',
 
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'your-project-id',
